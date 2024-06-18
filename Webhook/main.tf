@@ -73,7 +73,7 @@ resource "aws_route_table" "example" {
 
 # Associate the route table with the subnet
 resource "aws_route_table_association" "example_association" {
-  subnet_id  = aws_subnet.public_subnets.id
+  subnet_id      = aws_subnet.public_subnets.id
   route_table_id = aws_route_table.example.id
 }
 
